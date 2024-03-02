@@ -4,10 +4,6 @@ import Mascota from './mascota.js';
 
 document.getElementsByTagName("button")[0].addEventListener("click", (e) => {
     e.preventDefault();
-    let propietario1 = new Propietario(document.getElementById("propietario").value,
-        document.getElementById("direccion").value,
-        document.getElementById("telefono").value);
-
     let mascota1 = new Mascota(document.getElementById("propietario").value,
         document.getElementById("direccion").value,
         document.getElementById("telefono").value,
