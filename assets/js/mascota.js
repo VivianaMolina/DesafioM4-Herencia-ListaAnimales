@@ -15,12 +15,12 @@ export default class Mascota extends Animal {
         return this._enfermedad;
     }
     // métodos “setters”
-    set nombreMascota(nuevo_nombreMascota) {
-        this._nombreMascota = nuevo_nombreMascota;
+    set nombreMascota(nombreMascota) {
+        this._nombreMascota = nombreMascota;
     }
 
-    set enfermedad(nuevo_enfermedad) {
-        this._nombreMascota = nuevo_enfermedad;
+    set enfermedad(enfermedad) {
+        this._nombreMascota = enfermedad;
     }
 
     getNombreEnfermedadMascota() {

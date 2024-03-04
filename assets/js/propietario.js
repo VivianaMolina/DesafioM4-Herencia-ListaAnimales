@@ -15,17 +15,6 @@ export default class Propietario {
         return this._telefono;
     }
 
-    // métodos “setters”
-    set nombre(nuevo_nombre) {
-        this._nombre = nuevo_nombre;
-    }
-    set direccion(nuevo_direccion) {
-        this._direccion = nuevo_direccion;
-    }
-    set telefono(nuevo_telefono) {
-        return this._telefono = nuevo_telefono;
-    }
-
     datosPropietario() {
         return `El nombre del dueño es: ${this.nombre}. El domicilio es: ${this.direccion}, y el número telefónico de contacto: ${this.telefono}`;
     }

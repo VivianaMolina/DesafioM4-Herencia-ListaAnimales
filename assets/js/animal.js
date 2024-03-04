@@ -7,10 +7,6 @@ export default class Animal extends Propietario {
 
     // método “getters” 
     get tipo() {
-        return this._tipo;
-    }
-
-    getTipoAnimal() {
-        return `El tipo de animal es un: ${this.tipo}, `;
+        return `El tipo de animal es un: ${this._tipo}, `
     }
 }
