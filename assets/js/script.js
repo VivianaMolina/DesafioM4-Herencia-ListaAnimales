@@ -9,25 +9,23 @@ document.getElementsByTagName("button")[0].addEventListener("click", (e) => {
     let nombreMascota = document.getElementById("nombreMascota").value;
     let enfermedad = document.getElementById("enfermedad").value;
 
-    consultaTipoMascota(tipo);
 
-    function consultaTipoMascota(tipo) {
-        if (tipo === 'perro') {
-            let perro = new Mascota(propietario, direccion, telefono, tipo, nombreMascota, enfermedad);
-            resultado(perro);
-        } else if (tipo === 'gato') {
-            let gato = new Mascota(propietario, direccion, telefono, tipo, nombreMascota, enfermedad);
-            resultado(gato);
-        } else if (tipo === 'conejo') {
-            let conejo = new Mascota(propietario, direccion, telefono, tipo, nombreMascota, enfermedad);
-            resultado(conejo);
-        } else {
-            alert ("Mascota no valida");
-        }
+    if (tipo === 'perro') {
+        let perro = new Mascota(propietario, direccion, telefono, tipo, nombreMascota, enfermedad);
+        resultado(perro);
+    } else if (tipo === 'gato') {
+        let gato = new Mascota(propietario, direccion, telefono, tipo, nombreMascota, enfermedad);
+        resultado(gato);
+    } else if (tipo === 'conejo') {
+        let conejo = new Mascota(propietario, direccion, telefono, tipo, nombreMascota, enfermedad);
+        resultado(conejo);
+    } else {
+        alert("Mascota no valida");
     }
+
 })
 
-function resultado (valor) {
+function resultado(valor) {
     const resultElemUl = document.getElementById('resultado').children[0];
     resultElemUl.innerHTML = "";
     const listaDatosPropietario = document.createElement("li");
